@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"hgf\startup_stm32f107xc.o"
+"hgf\main.o"
+"hgf\gpio.o"
+"hgf\usart.o"
+"hgf\stm32f1xx_it.o"
+"hgf\stm32f1xx_hal_msp.o"
+"hgf\stm32f1xx_hal_gpio_ex.o"
+"hgf\stm32f1xx_hal_tim.o"
+"hgf\stm32f1xx_hal_tim_ex.o"
+"hgf\stm32f1xx_hal_uart.o"
+"hgf\stm32f1xx_hal.o"
+"hgf\stm32f1xx_hal_rcc.o"
+"hgf\stm32f1xx_hal_rcc_ex.o"
+"hgf\stm32f1xx_hal_gpio.o"
+"hgf\stm32f1xx_hal_dma.o"
+"hgf\stm32f1xx_hal_cortex.o"
+"hgf\stm32f1xx_hal_pwr.o"
+"hgf\stm32f1xx_hal_flash.o"
+"hgf\stm32f1xx_hal_flash_ex.o"
+"hgf\stm32f1xx_hal_exti.o"
+"hgf\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "hgf\hgf.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hgf.map" -o hgf\hgf.axf
